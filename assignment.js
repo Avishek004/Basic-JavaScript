@@ -1,14 +1,14 @@
 // https://github.com/Avishek004/Basic-JavaScript
 
-
+// First Project - KilometerToMeter
 function kilometerToMeter(KM) {
     var Meter = KM * 1000;
 
-    if (Meter > 0) {
+    if (KM > 0) {
         return Meter;
     }
     else {
-        console.log("Can Not Possible");
+        return undefined;
     }
 }
 var result = kilometerToMeter(7);
@@ -16,7 +16,7 @@ console.log(result);
 
 
 
-
+// Second Project - BudgetCalculator
 function budgetCalculator(Seiko, Samsung, Asus) {
     var Clock = 50 * Seiko;
     var MobilePhone = 100 * Samsung;
@@ -30,9 +30,9 @@ console.log(result);
 
 
 
-
+// Third Project - HotelCost
 function hotelCost(StayingDays) {
-    if (StayingDays <= 10) {
+    if (StayingDays > 0 && StayingDays <= 10) {
         var TotalCost = StayingDays * 100;
         return TotalCost;
     }
@@ -50,18 +50,18 @@ console.log(result);
 
 
 
-
+// Fourth Project - MegaFriend
 function megaFriend(Array) {
     var MaxString = Array[0].length;
-    var Ans = Array[0];
+    var Name = Array[0];
     for (var i = 1; i < Array.length; i++) {
         var Maxi = Array[i].length;
         if (Maxi > MaxString) {
-            Ans = Array[i];
+            Name = Array[i];
             MaxString = Maxi;
         }
     }
-    return Ans;
+    return Name;
 }
 var result = megaFriend(["Chan", "Monica", "Ross", "Rachel", "Joey", "Pheobe"]);
 console.log(result);

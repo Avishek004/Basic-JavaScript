@@ -1,3 +1,6 @@
+// https://github.com/Avishek004/Basic-JavaScript
+
+
 function kilometerToMeter(KM) {
     var Meter = KM * 1000;
 
@@ -13,6 +16,7 @@ console.log(result);
 
 
 
+
 function budgetCalculator(Seiko, Samsung, Asus) {
     var Clock = 50 * Seiko;
     var MobilePhone = 100 * Samsung;
@@ -23,6 +27,7 @@ function budgetCalculator(Seiko, Samsung, Asus) {
 }
 var result = budgetCalculator(7, 7, 4);
 console.log(result);
+
 
 
 
